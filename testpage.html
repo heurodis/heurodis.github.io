@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>testpage</title></head>
+
+<body>
+
+
+
+<p>Solve, for 0 &le; <i>&theta;</i> &le; <i>&pi;</i>, giving each solution to 3 significant figures,</p>
+
+<p>5 sin <i>&theta;</i> &minus; 1 = 0</p>
+
+<hr>
+
+<button id="solutionButton" type="button" 
+  onclick="document.getElementById('solutionButton').style.display='none';
+           document.getElementById('solutionHeader').style.display='block';
+           document.getElementById('break1').style.display='block';
+           document.getElementById('line1').style.display='block';
+           document.getElementById('line2').style.display='block';
+           document.getElementById('nextButton1').style.display='block'">Solution</button>
+
+<p id="solutionHeader" style="display:none"><b>Solution:</b></p>
+
+<br id="break1" style="display:none">
+
+<p id="line1" style="display:none">5 sin <i>&theta;</i> &minus; 1 = 0</p>
+
+<p id="line2" style="display:none">sin <i>&theta;</i> = 1/5</p>
+
+<button id="nextButton1" type="button" style="display:none"
+  onclick="document.getElementById('nextButton1').style.display='none';
+           document.getElementById('break2').style.display='block';
+           document.getElementById('line3').style.display='block';
+           document.getElementById('rewindButton1').style.display='block';
+           document.getElementById('nextButton2').style.display='block'">next step</button>
+
+<br id="break2" style="display:none">
+
+<p id="line3" style="display:none">Since sin <i>&theta;</i> = 1/5 &gt; 0, <i>&theta;</i> is in the 1st or 2nd quadrant.</p>
+
+<button id="rewindButton1" type="button" style="display:none"
+  onclick="document.getElementById('nextButton1').style.display='block';
+           document.getElementById('break2').style.display='none';
+           document.getElementById('line3').style.display='none';
+           document.getElementById('line4').style.display='none';
+           document.getElementById('rewindButton1').style.display='none';
+           document.getElementById('nextButton2').style.display='none'">rewind</button>
+<button id="nextButton2" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton1').style.display='none';
+           document.getElementById('nextButton2').style.display='none';
+           document.getElementById('break3').style.display='block';
+           document.getElementById('line4').style.display='block';
+           document.getElementById('line5').style.display='block';
+           document.getElementById('rewindButton2').style.display='block';
+           document.getElementById('nextButton3').style.display='block'">next step</button>
+
+<br id="break3" style="display:none">
+
+<p id="line4" style="display:none">sin<sup>&minus;1</sup> 1/5 = 0.20136 to 5 s.f.</p>
+
+<p id="line5" style="display:none">The basic angle of <i>&theta;</i> is 0.20136.</p>
+
+<button id="rewindButton2" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton1').style.display='block';
+           document.getElementById('nextButton2').style.display='block';
+           document.getElementById('break3').style.display='none';
+           document.getElementById('line4').style.display='none';
+           document.getElementById('line5').style.display='none';
+           document.getElementById('rewindButton2').style.display='none';
+           document.getElementById('nextButton3').style.display='none'">rewind</button>
+<button id="nextButton3" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton2').style.display='none';
+           document.getElementById('nextButton3').style.display='none';
+           document.getElementById('break4').style.display='block';
+           document.getElementById('line6').style.display='block';
+           document.getElementById('rewindButton3').style.display='block';
+           document.getElementById('nextButton4').style.display='block'">next step</button>
+
+<br id="break4" style="display:none">
+
+<p id="line6" style="display:none">The range of <i>&theta;</i> is 0 &le; <i>&theta;</i> &le; <i>&pi;</i>.</p>
+
+<button id="rewindButton3" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton2').style.display='block';
+           document.getElementById('nextButton3').style.display='block';
+           document.getElementById('break4').style.display='none';
+           document.getElementById('line6').style.display='none';
+           document.getElementById('rewindButton3').style.display='none';
+           document.getElementById('nextButton4').style.display='none'">rewind</button>
+<button id="nextButton4" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton3').style.display='none';
+           document.getElementById('nextButton4').style.display='none';
+           document.getElementById('break5').style.display='block';
+           document.getElementById('image1').style.display='block';
+           document.getElementById('rewindButton4').style.display='block';
+           document.getElementById('nextButton5').style.display='block'">next step</button>
+
+<br id="break5" style="display:none">
+
+<img id="image1" style="display:none" src="https://drive.google.com/uc?export=view&id=1g4aVu0N7ykBvk4FmuLRjJ-KxeGzjvP3e" height="400" width="400">
+
+<button id="rewindButton4" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton3').style.display='block';
+           document.getElementById('nextButton4').style.display='block';
+           document.getElementById('break5').style.display='none';
+           document.getElementById('image1').style.display='none';
+           document.getElementById('rewindButton4').style.display='none';
+           document.getElementById('nextButton5').style.display='none'">rewind</button>
+<button id="nextButton5" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton4').style.display='none';
+           document.getElementById('nextButton5').style.display='none';
+           document.getElementById('image1').style.display='none';
+           document.getElementById('image2').style.display='block';
+           document.getElementById('rewindButton5').style.display='block';
+           document.getElementById('nextButton6').style.display='block'">next step</button>
+
+<img id="image2" style="display:none" src="https://drive.google.com/uc?export=view&id=1eZY36mKrPpVaNlGljmhYqn22tZ8G9jA9" height="400" width="400">
+
+<button id="rewindButton5" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton4').style.display='block';
+           document.getElementById('nextButton5').style.display='block';
+           document.getElementById('image1').style.display='block';
+           document.getElementById('image2').style.display='none';
+           document.getElementById('rewindButton5').style.display='none';
+           document.getElementById('nextButton6').style.display='none'">rewind</button>
+<button id="nextButton6" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton5').style.display='none';
+           document.getElementById('nextButton6').style.display='none';
+           document.getElementById('image2').style.display='none';
+           document.getElementById('image3').style.display='block';
+           document.getElementById('rewindButton6').style.display='block';
+           document.getElementById('nextButton7').style.display='block'">next step</button>
+
+<img id="image3" style="display:none" src="https://drive.google.com/uc?export=view&id=1lIAjOwY7B3hIRXQ8YmDuuygDGP4Y8HBw" height="400" width="400">
+
+<button id="rewindButton6" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton5').style.display='block';
+           document.getElementById('nextButton6').style.display='block';
+           document.getElementById('image2').style.display='block';
+           document.getElementById('image3').style.display='none';
+           document.getElementById('rewindButton6').style.display='none';
+           document.getElementById('nextButton7').style.display='none'">rewind</button>
+<button id="nextButton7" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton6').style.display='none';
+           document.getElementById('nextButton7').style.display='none';
+           document.getElementById('image3').style.display='none';
+           document.getElementById('image4').style.display='block';
+           document.getElementById('rewindButton7').style.display='block';           
+           document.getElementById('nextButton8').style.display='block'">next step</button>
+
+<img id="image4" style="display:none" src="https://drive.google.com/uc?export=view&id=1K7YbI4hMxOKavg7NC-C9aCagF5_SuJqW" height="400" width="400">
+
+<button id="rewindButton7" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton6').style.display='block';
+           document.getElementById('nextButton7').style.display='block';
+           document.getElementById('image3').style.display='block';
+           document.getElementById('image4').style.display='none';
+           document.getElementById('rewindButton7').style.display='none';
+           document.getElementById('nextButton8').style.display='none';">rewind</button>
+<button id="nextButton8" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton7').style.display='none';
+           document.getElementById('nextButton8').style.display='none';
+           document.getElementById('break6').style.display='block';
+           document.getElementById('line7').style.display='block';
+           document.getElementById('line8').style.display='block';
+           document.getElementById('line9').style.display='block';
+           document.getElementById('endLine').style.display='block';
+           document.getElementById('rewindButton8').style.display='block'">last step</button>
+
+<br id="break6" style="display:none">
+
+<p id="line7" style="display:none">From the above diagram,</p>
+
+<p id="line8" style="display:none"><i>&theta;</i> = 0.20136 or <i>&pi;</i> &minus; 0.20136</p>
+
+<p id="line9" style="display:none"><i>&theta;</i> = 0.201 or 2.94 to 3 s.f.</p>
+
+<hr id="endLine" style="display:none">
+
+<button id="rewindButton8" type="button" style="display:none"
+  onclick="document.getElementById('rewindButton7').style.display='block';
+           document.getElementById('nextButton8').style.display='block';
+           document.getElementById('image4').style.display='block';
+           document.getElementById('break6').style.display='none';
+           document.getElementById('line7').style.display='none';
+           document.getElementById('line8').style.display='none';
+           document.getElementById('line9').style.display='none';
+           document.getElementById('endLine').style.display='none';
+           document.getElementById('rewindButton8').style.display='none';">rewind</button>
+
+
+
+</body>
+
+</html>
